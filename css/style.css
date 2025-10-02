@@ -1,56 +1,119 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: #000014;
-    font-family: "Jolly Lodger";
+  background-image: url("../img/gradient.png");
+  font-family: "Jolly Lodger";
+  background-color: #000014;
 }
 
 .container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 100px;
-    margin: 80px 330px ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 100px;
+  margin: 80px 330px;
 }
 
 h1 {
-    color: aliceblue;
-    color: #FFF;
-    -webkit-text-stroke-width: 4px;
-    -webkit-text-stroke-color: #8958FF;
-    font-size: 96px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+  color: aliceblue;
+  color: #fff;
+  -webkit-text-stroke-width: 4px;
+  -webkit-text-stroke-color: #8958ff;
+  font-size: 96px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .cards {
-    display: grid;
-    grid-template-columns: repeat(6, auto);
-    gap: 36px;
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+  gap: 36px;
 }
 
 .card {
-    background-color: #FFE3BD;
-    width: 176px;
-    height: 176px;
-    flex-shrink: 0;
-    border-radius: 12px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  background-color: #ffe3bd;
+  width: 176px;
+  height: 176px;
+  flex-shrink: 0;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-p {
-    color: #FFF;
-    text-align: center;
+button {
+    font-family: "Jolly Lodger";
+  color: #fff;
+  text-align: center;
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border: none;
+  cursor: pointer;
+}
+
+h3 {
+    -webkit-text-stroke-width: 4px;
+    -webkit-text-stroke-color: #8958FF;
+    font-family: "Jolly Lodger";
     font-size: 72px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    text-align: center;
+}
+
+
+dialog {
+    margin-top: 300px;
+    margin-left: 500px;
+    padding: 0;
+    border-radius: 0.5rem;
+    width: 91.666667%;
+    max-width: 60rem;
+    border: none;
+    background-color: #00000000;
+    border: 1px solid gray;
+    border-radius: 16px;
+    background: #000014;  
+    color: white; 
+    padding: 30px 70px;
+}
+
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.74);
+    backdrop-filter: blur(4px);
+}
+
+#video-dialog p {
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 160%; /* 32px */
+    text-align: center;
+}
+
+#video-dialog button {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #8958FF;
+    text-align: center;
+    align-items: center;
+    display: inline-flex;
+    padding: 12px 80px;
+    justify-content: center;
+    border-radius: 6px;
+    margin-top: 20px;
 }

@@ -20,7 +20,16 @@
             <div class="card"><img src="./img/2.png" alt=""></div>
             <div class="card"><img src="./img/3.png" alt=""></div>
             <div class="card"><img src="./img/1.png" alt=""></div>
-            <div class="card" style="background-color: #8958FF;"><p>Buuh!</p><img src="" alt=""></div>
+            <div class="card" style="background-color: #8958FF; cursor: pointer;">
+                <button id="open-video-btn" style="background-color: #8958FF;">Buuh!</button>
+            </div>
+            <dialog id="video-dialog">
+                <div>
+                    <h3>Buuh!</h3>
+                    <p>Parabéns! Você completou este jogo da memória. Que tal experimentar uma dificuldade diferente ou jogar novamente na mesma dificuldade?</p>
+                    <button id="close-video-btn">Jogar novamente</button>
+                </div>
+            </dialog>
             <div class="card"><img src="./img/4.png" alt=""></div>
             <div class="card"><img src="./img/5.png" alt=""></div>
             <div class="card"><img src="./img/6.png" alt=""></div>
@@ -37,9 +46,24 @@
         </div>
     </main>
 
-    
+    <script>
 
+        const openBtn = document.getElementById("open-video-btn");
+        const closeBtn = document.getElementById("close-video-btn");
+        const videoDialog = document.getElementById("video-dialog");
 
+        openBtn.addEventListener("click", () => {
+            videoDialog.showModal();
+        });
+        closeBtn.addEventListener("click", () => {
+            videoDialog.close();
+        });
+        videoDialog.addEventListener("click", (event) => {
+            if (event.target === videoDialog) {
+                videoDialog.close();
+            }
+        });
+    </script>
 
 </body>
 </html>
