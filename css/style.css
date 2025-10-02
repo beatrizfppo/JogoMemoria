@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000014;
+    font-family: "Jolly Lodger";
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 100px;
+    margin: 80px 330px ;
+}
+
+h1 {
+    color: aliceblue;
+    color: #FFF;
+    -webkit-text-stroke-width: 4px;
+    -webkit-text-stroke-color: #8958FF;
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 36px;
+}
+
+.card {
+    background-color: #FFE3BD;
+    width: 176px;
+    height: 176px;
+    flex-shrink: 0;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    color: #FFF;
+    text-align: center;
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
