@@ -30,8 +30,8 @@ h1 {
 }
 
 .cards {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(6, auto);
     gap: 36px;
 }
 
